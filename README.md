@@ -26,3 +26,17 @@ Issue/PR templates, and commit convention enforcement.
 | `GITHUB_TOKEN` | release.yml | Auto-provided |
 | `DEEPSEEK_API_KEY` | (none by default) | Add if tests need LLM |
 | `BRAVE_API_KEY` | (none by default) | Add if tests need web search |
+
+## GitHub Action: Issue Validator
+
+This repo includes `action.yml` — a reusable GitHub Action that:
+- Validates bug report template completeness
+- Runs AI-powered log authenticity review
+- Auto-comments on incomplete or suspicious issues
+
+```yaml
+- uses: 14790897/project-scaffold@main
+  with:
+    github-token: ${{ secrets.GITHUB_TOKEN }}
+    ai-api-key: ${{ secrets.DEEPSEEK_API_KEY }}
+```

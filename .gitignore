@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+node_modules/
+.vite/
+.pytest_cache/
+.ruff_cache/
+*.log
+.claude/
+.codebuddy/
+.workbuddy/

@@ -1,0 +1,14 @@
+[project]
+name = "project-scaffold"
+version = "0.1.0"
+description = "Replace with your project description"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
